@@ -152,3 +152,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// loader
+document.addEventListener("DOMContentLoaded", function () {
+  // Simulate a small delay for demonstration purposes
+  setTimeout(() => {
+    const loaderWrapper = document.getElementById("loader-wrapper");
+    loaderWrapper.style.opacity = "0";
+    loaderWrapper.style.transition = "opacity 0.5s ease";
+    setTimeout(() => loaderWrapper.style.display = "none", 500);
+  }, 1000); // Adjust the delay time if needed
+});
